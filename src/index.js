@@ -9,7 +9,7 @@ const cors = require("cors");
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.raw());
-app.get("/auth/login", auth.login);
+app.post("/auth/login", auth.login);
 app.post("/auth/register", auth.register);
 app.post("/bets/bet", bets.create);
 
