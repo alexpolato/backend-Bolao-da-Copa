@@ -10,7 +10,7 @@
   "routes": [
     {
       "source": "/(.*)",
-      "destination": "./src/index.j"
+      "destination": "./src/index.js"
     }
   ]
 }
