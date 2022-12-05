@@ -2,7 +2,7 @@ const db = require("../config/db");
 
 exports.login = async function (req, res) {
   const { username, password } = req.body;
-  // res.send("HEllo");
+
   const { rows: user } = await db.query(
     `SELECT id, username FROM users u WHERE u.username = '${username}' AND u.password = '${password}' LIMIT 1`
   );
