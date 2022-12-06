@@ -19,5 +19,5 @@ app.get("/", function (req, res) {
 });
 
 app.listen(PORT, () =>
-  console.log(`Project running at: http://localhost:${PORT}`)
+  console.log(`Project running at: http://localhost:${PORT}!`)
 );
